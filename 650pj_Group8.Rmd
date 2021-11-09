@@ -4,5 +4,7 @@ author: "YuboSHAO"
 date: "11/9/2021"
 output: pdf_document
 ---
-
-# Linear regression PJ
+```{r}
+library(NHANES)
+raw.data <- force(NHANES)
+```
