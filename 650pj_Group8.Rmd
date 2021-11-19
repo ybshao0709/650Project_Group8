@@ -145,7 +145,7 @@ BMI_WHO.plot
 BPSysAve.plot <- ggplot() + geom_histogram(aes(BPSysAve, y = ..density..), data4, bins = 30) +
       theme(panel.grid = element_blank(), panel.background = element_blank(), 
         axis.line = element_line(colour = "black")) + geom_density(aes(BPSysAve), data4) 
-BPDiaAve.plot <- ggplot() + geom_histogram(aes(BPDiaAve), data4, bins = 30) +
+BPDiaAve.plot <- ggplot() + geom_histogram(aes(BPDiaAve, y = ..density..), data4, bins = 30) +
       theme(panel.grid = element_blank(), panel.background = element_blank(), 
         axis.line = element_line(colour = "black")) + geom_density(aes(BPDiaAve), data4)
 grid.arrange(BPSysAve.plot, BPDiaAve.plot, nrow = 1)
@@ -173,7 +173,7 @@ sum(is.na(data4$Testosterone))
 
 * (7) Direct HDL & Total HDL could also be important confounders, you can find the article here: *["Associations of Usual Sleep Duration with Serum Lipid and Lipoprotein Levels"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2398756/)*
 
-```{r, collapse=TRUE, fig.height = 6, fig.width = 10, fig.align = "center", warning=FALSE}
+```{r, collapse=TRUE, fig.height = 4, fig.width = 10, fig.align = "center", warning=FALSE}
 DirectChol.plot <- ggplot() + geom_histogram(aes(DirectChol, y = ..density..), data4, bins = 20) +
       theme(panel.grid = element_blank(), panel.background = element_blank(), 
         axis.line = element_line(colour = "black")) + geom_density(aes(DirectChol), data4) 
