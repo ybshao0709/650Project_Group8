@@ -99,6 +99,11 @@ head(data.clean, n = 5)
 ```
 
 ```{r,include=FALSE}
+write.csv(data.clean, file = "/Users/shaoyubo/Desktop/UMich/Course/Fall 2021/BIOSTAT 650/Final_Project/Final_Git/Data_clean/data_clean2.csv")
+save(data.clean, file = "/Users/shaoyubo/Desktop/UMich/Course/Fall 2021/BIOSTAT 650/Final_Project/Final_Git/Data_clean/data_clean2.Rda")
+```
+
+```{r,include=FALSE}
 attach(data.clean)
 ```
 
